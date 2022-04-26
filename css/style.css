@@ -732,7 +732,8 @@
 
   .feature__bg {
     width: 1110px;
-    max-height: 545px;
+    max-height: 590px;
+    top: 33%;
     left: 10%;
   }
 
@@ -742,17 +743,23 @@
 
   .feature__photo {
     left: -10%;
-    top: 10%;
+    top: 0;
   }
 
+  .feature__curved-line {
+    left: -2%;
   }
 
   .feature__content {
     width: 1110px;
-    height: 545px;
+    height: 590px;
     flex-direction: row;
 
     outline: 2px solid yellow;
+
+    position: absolute;
+    top: 27%;
+    left: 10%;
   }
 
   .feature__container {
