@@ -350,7 +350,7 @@
 
 .feature__heading {
   line-height: 48px;
-  letter-spacing: 0.48px;
+  letter-spacing: -0.42px;
   margin-bottom: 4rem;
 }
 
@@ -656,14 +656,10 @@
     margin: 0;
   }
 
-  .header {
-    outline: 2px solid red;
-  }
-
   .hero {
     width: 100%;
     /* max-width: 1440px; */
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
   }
 
   .hero__container {
@@ -672,7 +668,7 @@
     padding-right: 0; */
     padding-top: 0;
     padding-bottom: 0;
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
   }
 
   .curve__line {
@@ -709,7 +705,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    outline: 2px solid orange;
+    /* outline: 2px solid orange; */
     max-width: 190px;
     max-height: 375px;
   }
@@ -727,14 +723,16 @@
   .stats__content.item-1 {
     width: 190px;
     grid-column: 1 / 4;
-    outline: 2px solid magenta;
+    /* outline: 2px solid magenta; */
   }
 
   .feature__bg {
     width: 1110px;
-    max-height: 590px;
+    max-height: 545px;
     top: 33%;
-    left: 10%;
+    left: 12%;
+    padding-bottom: 0;
+    border-radius: 15px;
   }
 
   .feature__img--container {
@@ -742,7 +740,7 @@
   }
 
   .feature__photo {
-    left: -10%;
+    left: 3%;
     top: 0;
   }
 
@@ -751,23 +749,21 @@
   }
 
   .feature__content {
+    /* overflow-y: hidden; */
     width: 1110px;
-    height: 590px;
+    height: 545px;
     flex-direction: row;
-
-    outline: 2px solid yellow;
-
+    /* outline: 2px solid yellow; */
     position: absolute;
     top: 27%;
     left: 10%;
   }
 
   .feature__container {
-    outline: 2px solid orange;
   }
   .feature__text--content-box {
     width: 350px;
-    outline: 2px solid lime;
+    margin-left: 5.3rem;
   }
 
   .feature__text-content {
@@ -776,10 +772,31 @@
     margin-left: 0;
   }
 
+  .feature__heading {
+    line-height: 56px;
+    text-align: left;
+  }
   .feature__text {
     width: 350px;
     text-align: left;
     font-size: 2rem;
     line-height: 35px;
+  }
+
+  .feature__cmo-name {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .footer__container {
+    outline: 2px solid magenta;
+    min-height: 464px;
+    margin-top: -217px;
+  }
+
+  .footer__content {
+    margin-bottom: 0;
+    display: flex;
+    align-items: start;
   }
 }
