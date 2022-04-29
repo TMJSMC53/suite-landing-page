@@ -25,7 +25,7 @@
   --fs-100: 1.4rem;
 
   /* font-families */
-  --ff-sans: "Epilogue", sans-serif;
+  --ff-sans: 'Epilogue', sans-serif;
 }
 
 @media screen and (min-width: 48rem) {
@@ -729,7 +729,6 @@
   .feature__bg {
     width: 1110px;
     max-height: 545px;
-    top: 33%;
     left: 12%;
     padding-bottom: 0;
     border-radius: 15px;
@@ -755,11 +754,10 @@
     flex-direction: row;
     /* outline: 2px solid yellow; */
     position: absolute;
-    top: 27%;
-    left: 10%;
   }
 
   .feature__container {
+    overflow: hidden;
   }
   .feature__text--content-box {
     width: 350px;
