@@ -297,7 +297,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 95%;
 
   background-color: hsl(var(--clr-dark));
   border-radius: 15px;
@@ -306,7 +306,7 @@
 .feature__container {
   position: relative;
   min-height: 748px;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 1;
   /* outline: 2px solid blue; */
 }
@@ -316,6 +316,9 @@
   flex-direction: column;
   align-items: center;
   z-index: 2;
+
+  /* position: absolute;
+  bottom: 0; */
   /* outline: 2px solid magenta; */
 }
 
@@ -324,16 +327,18 @@
   width: min(100%, 53.8rem);
   height: 39.5rem;
   overflow-y: clip;
-  /* outline: 2px solid yellow; */
+  outline: 2px solid yellow;
+  top: -15%;
+  /* z-index: 3; */
 }
 
 .feature__photo {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  /* height: 100%; */
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  /* z-index: 4; */
 }
 
 .feature__photo img {
@@ -576,6 +581,7 @@
     max-height: 682px;
     left: 19%;
     padding-bottom: 5.9rem;
+    overflow: hidden;
   }
 
   .feature__photo {
